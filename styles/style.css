@@ -1,0 +1,339 @@
+
+/* Based on template https://codepen.io/marcobiedermann/pen/qahmr?editors=0100 */
+ 
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- https://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/*Background colours:
+  494996 bright
+  252565 dark*/
+
+/* ---------- GENERAL ---------- */
+
+* {
+  box-sizing: inherit  
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background: #2b71b8;;
+  color: 000;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100%;
+}
+
+input {
+  background-image: none;
+  border: none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  transition: all .3s;
+}
+
+/* ---------- ALIGN ---------- */
+
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ---------- GRID ---------- */
+
+.grid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  width: 400px;
+}
+
+.table-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  width: 1200px;
+}
+
+/* ---------- LOGIN ---------- */
+.dataentry-form h2 {
+  
+    background: #bb2222;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 28px;
+    padding: 20px 28px;
+    margin-bottom: 0px;
+    text-shadow: 2px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+.dataentry-form #form-container {
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+    padding: 20px 28px;
+}
+
+.dataentry-form #form-container, .dataentry-form h2{
+  box-shadow: 24px 24px 1px rgba(0,0,0,.3);
+  /*box-shadow: 0px 0px 0px 30px rgba(0,0,0,.3);*/
+}
+
+.dataentry-form #form-container p {
+    color: #777;
+/*    margin-top: 16px;
+    margin-bottom: 0px;*/
+}
+
+.form-label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.input-box {
+  margin-bottom: 24px
+}
+
+.dataentry-form #form-container p:last-child {
+    margin-bottom: 0;
+}
+
+.dataentry-form #form-container input {
+    border-radius: 3px;
+}
+
+.dataentry-form #form-container input[type="text"]:focus, 
+.dataentry-form #form-container input[type="password"]:focus {
+  outline: none;  
+  transform: translateX(10px);
+
+}
+
+
+.generic-button:focus {
+  /*transform: translateY(5px);*/
+  box-shadow: 0px 0px 1px 3px #494996;
+  outline: none;  
+/*  border-style: outset;
+  border-color: rgba(0,0,0,1);
+  border-width: 1px;
+  border-radius: 3px;*/
+}
+
+.dataentry-form #form-container input[type="text"], 
+.dataentry-form #form-container input[type="password"] {
+    background: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 100%;
+    /*box-shadow: 4px 4px 4px rgba(0,0,0,.3);*/
+}
+
+.dataentry-form #form-container fieldset input[type="submit"], .generic-button {
+    margin-top: 20px;
+    background: #33cc77;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    /*box-shadow: 4px 4px 4px rgba(0,0,0,.3);*/
+}
+
+.dataentry-form #form-container input[type="text"], 
+.dataentry-form #form-container input[type="password"],
+.dataentry-form #form-container fieldset input[type="submit"],
+.generic-button {
+  box-shadow: 4px 4px 4px rgba(0,0,0,.4);
+}
+
+/*.generic-button {
+    background: #33cc77;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}*/
+
+.dataentry-form #form-container input[type="submit"]:hover,
+.generic-button:hover {
+    background: #28ad63;
+    /*box-shadow: 0px 6px 1px rgba(0,0,0,0.15);*/
+}
+
+.hoverable {
+  position: relative; 
+}
+
+ .hoverable:hover {
+
+  transform: translateY(-10px);
+
+/*  animation-name: raiseOnHover;
+  animation-fill-mode: both;
+  animation-duration: 0.25s;*/
+}
+
+.focusable-textbox {
+  position: relative;
+}
+
+
+
+/*@keyframes raiseOnHover {
+  0% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}*/
+
+#feedback-text {
+  color: #A63232 !important;
+  height: 14px;
+  font-size: 14px;
+}
+
+
+
+/*TABLE STYLE https://codepen.io/alassetter/pen/cyrfB*/
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#666B85;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #fafafa;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
