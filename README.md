@@ -8,8 +8,10 @@
 ## Preview
 
 Login page:
+
 ![Login page](https://i.imgur.com/CDv31CK.png)
 
 
 Signup Page:
+
 ![Signup Page](https://i.imgur.com/q6BQqoR.png)
